@@ -706,3 +706,65 @@ footer a:hover{
     margin: 0 auto;
     text-align: center;
 }
+
+/*form login*/
+/* Bordered form */
+.login{
+    border: 3px solid #86A69D;
+  }
+  .logcontainer{
+      text-align: center;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    display: flex; 
+    width: 80%;
+    padding: 15px 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 10%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
