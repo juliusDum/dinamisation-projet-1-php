@@ -717,7 +717,7 @@ footer a:hover{
   }
   
   /* Full-width inputs */
-  input[type=text], input[type=password] {
+  input[type=pseudo], input[type=password] {
     display: flex; 
     width: 80%;
     padding: 15px 20px;
