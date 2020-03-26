@@ -1,11 +1,12 @@
 <?php
 include('../controller/controller.php');
-if(isset($_POST)) {
+if($_POST){
+    $error = array();
     if(empty($_POST['username'])){
-        $error['username'] = "** Username est obligatoire";
+        $error['username'] = "Username est obligatoire";
     }
     if(empty($_POST['password'])){
-        $error['password'] = "** Password est obligatoire";
+        $error['password'] = "Password est obligatoire";
     } else {
         getLoginAuth($_POST);
     }
@@ -23,11 +24,15 @@ include('../layout/header.php');
  
    <div class="logcontainer">
      <label for="username">Username</label>
-     <input type="pseudo" placeholder="Username" name="username" required>
- 
+     <input type="pseudo" placeholder="Username" name="username">
+     <?php if(isset($error['username'])) echo $error['username']; ?>
+      <br>
+      <br>
      <label for="password">Password</label>
-     <input type="password" placeholder="Password" name="password" required>
- 
+     <input type="password" placeholder="Password" name="password">
+     <?php if(isset($error['password'])) echo $error['password']; ?>
+     <br>
+     <br>
      <button type="submit">Login</button>
    </div>
  </form>

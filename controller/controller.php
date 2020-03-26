@@ -4,7 +4,7 @@
         $_SESSION['username'] = $form['username'];
         $_SESSION['isConnected'] = true;
     if($_SESSION['isConnected'] === true){
-            Header('Location: http://localhost:8000/page/apropos.php');
+            Header('Location: http://localhost:8000/page/portfolio.php');
         }    
     } else {
         return $errors['password'] = "Please enter 1993 password to try our app !";

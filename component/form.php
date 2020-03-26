@@ -1,38 +1,73 @@
+<?php if($_POST){
+    $errors = array();
+    if(empty($_POST['sex'])){
+        $errors['sex'] = "Select your sex";
+      }
+    if(empty($_POST['name'])){
+      $errors['name'] = "Your name is required";
+    }
+    if(empty($_POST['email'])){
+      $errors['email'] = "Your email is required";
+    }
+    if(empty($_POST['objet'])){
+      $errors['objet'] = "Your motif is required";
+    }
+    if(empty($_POST['message'])){
+      $errors['message'] = "Your message is required";
+    }
+  }
+?>
+<?php 
+    if(isset($_POST)){
+        var_dump($_POST);
+        $to = "jules.dumas94@gmail.com";
+        $from = "jules.testphp@gmail.com";
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $subject = "New message from contact Roquet Raccoon";
+        $content = "Le message suivant vient de la galaxie" .$message ."email de contact: " .$email;
+        $headers = "From" .$from;
+        mail($to, $subject, $content, $headers);
+        echo 'votre message est bien parti pour la galaxie';
+    }
+?>
+
 <h2>Nous contacter</h2> 
                 <div class="contact" >
                     <div class="table"> 
-                        <form class="form-style-7">
+                        <form class="form-style-7" method="POST">
                         <ul>
                             <li>
-                                <label for="sexe">Sexe</label>
+                                <label for="sexe"></label>
                                 <select name="select">
+                                    <option>sex</option>
                                     <option>Femme</option>
                                     <option>Homme</option>
-                                    <span>Votre sexe</span>
                                 </select>
+                                <?php if(isset($errors['sex'])) echo $errors['sex']; ?>
                             </li>
                             <li>   
                                 <label for="name">Nom</label>
                                 <input type="text" name="name" maxlength="100">
-                                <span>Entrez votre nom complet ici</span>
+                                <?php if(isset($errors['name'])) echo $errors['name']; ?>
                             </li>
                             <li>
                                 <label for="email">Email</label>
                                 <input type="email" name="email" maxlength="100">
-                                <span>Entrez votre adresse mail valide</span>
+                                <?php if(isset($errors['email'])) echo $errors['email']; ?>
                             </li>
                             <li>
                                 <label for="subject">Objet</label>
                                 <input type="text" name="objet" maxlength="100">
-                                <span>Dites-nous tout</span>
+                                <?php if(isset($errors['objet'])) echo $errors['objet']; ?>
                             </li>
                             <li>
                                 <label for="bio">Message</label>
-                                <textarea name="bio" onkeyup="adjust_textarea(this)"></textarea>
-                                <span>Ecrivez votre message ici</span>
+                                <textarea name="message" onkeyup="adjust_textarea(this)"></textarea>
+                                <?php if(isset($errors['message'])) echo $errors['message']; ?>
                             </li>
                             <li>
-                                <input type="submit" value="Envoyer" >
+                                <input type="submit" value="Envoyer">
                             </li>
                         </ul>
                         </form> 

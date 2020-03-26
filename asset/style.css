@@ -98,7 +98,7 @@ h2 {
     color: black;
 }
 img {
-    border-radius: 10%;
+    border-radius: 3%;
 }
 .raccoon {
     display: flex;
@@ -126,7 +126,7 @@ img {
 }
 
 .raccoonR img, .raccoonR img {
-    width: 400%;
+    width: 300%;
 }
 
 .containerportfolioindex {
@@ -487,8 +487,11 @@ footer a:hover{
 }
 
 .backform {
-	background-image: url(https://images.pexels.com/photos/569098/pexels-photo-569098.jpeg?cs=srgb&dl=analogique-appareil-photo-classique-concentrer-569098.jpg&fm=jpg);
+	background-image: url(https://data2.1freewallpapers.com/detail/guardians-of-the-galaxy-raccoon-rocket.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
 }
 .contact{
     display: flex;

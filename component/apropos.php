@@ -1,6 +1,6 @@
 <div class="raccoonR">
                     <div>
-                        <img class="boxshadow" src="https://images-na.ssl-images-amazon.com/images/I/412Gqdo5d2L._AC_.jpg" alt="raccoon rocket">
+                        <img class="boxshadow" src="https://media0.giphy.com/media/3oKIPzVXlzxhAWamNW/giphy.gif?cid=ecf05e47e165c4af66e23432f794a1d7729aaa7ed8a99dc1&rid=giphy.gif" alt="raccoon rocket">
                     </div>
                     <div>
                         <p>
@@ -13,7 +13,7 @@
                 </div>
                 <div class="raccoonR">
                 <div>
-                    <img class="boxshadow" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/0cb1bf23943065.5632b7160ece4.jpg"
+                    <img class="boxshadow" src="https://media3.giphy.com/media/3o7bu9OfLFZVQZRNbG/giphy.gif?cid=ecf05e474c1645b0ffc02ec2ef3e34bef5dac0af9fbe65c8&rid=giphy.gif"
                         alt="raccoon prison">
                 </div>
                 <div>
