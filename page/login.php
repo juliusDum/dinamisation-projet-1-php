@@ -1,4 +1,7 @@
 <?php
+session_start();
+include('../layout/head.php');
+include('../layout/header.php');
 include('../controller/controller.php');
 if($_POST){
     $error = array();
@@ -11,11 +14,6 @@ if($_POST){
         getLoginAuth($_POST);
     }
   } 
-?>
-<?php
-session_start();
-include('../layout/head.php');
-include('../layout/header.php');
 ?>
 <form class='login' method="post">
    <div class="imgcontainer">

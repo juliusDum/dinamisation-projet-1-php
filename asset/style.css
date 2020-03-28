@@ -11,7 +11,7 @@
     display:flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #A3ACB5;    
+    background-color:  #A3ACB5;    
     height: 2em;
     position: fixed;
     width: 100%;
@@ -42,7 +42,7 @@
 
 .big_title {
     text-align: center;
-    background-color: #86A69D;
+    background: linear-gradient( #1C664B, white);
     color: white;
     font-family: "Amatic SC", sans-serif;
     font-size: 90px;
@@ -487,11 +487,10 @@ footer a:hover{
 }
 
 .backform {
-	background-image: url(https://data2.1freewallpapers.com/detail/guardians-of-the-galaxy-raccoon-rocket.jpg);
+	/*background-image: url(https://data2.1freewallpapers.com/detail/guardians-of-the-galaxy-raccoon-rocket.jpg);*/
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-
 }
 .contact{
     display: flex;
@@ -712,9 +711,6 @@ footer a:hover{
 
 /*form login*/
 /* Bordered form */
-.login{
-    border: 3px solid #86A69D;
-  }
   .logcontainer{
       text-align: center;
   }
@@ -732,7 +728,7 @@ footer a:hover{
   
   /* Set a style for all buttons */
   button {
-    background-color: #4CAF50;
+    background-color: #FA9F98;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -740,6 +736,14 @@ footer a:hover{
     cursor: pointer;
     border-radius: 6px;
     width: 10%;
+  }
+  .logout {
+    background-color: #FA9F98;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 4%;
   }
   
   /* Add a hover effect for buttons */

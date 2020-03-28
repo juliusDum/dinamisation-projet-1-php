@@ -11,3 +11,11 @@
     }
 }
 ?>
+
+<?php
+    function getUserLogout(){
+        unset($_SESSION['isConnected']);
+        unset($_SESSION['username']);
+        return session_destroy();
+    }
+?>

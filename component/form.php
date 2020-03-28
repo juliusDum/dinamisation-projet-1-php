@@ -1,7 +1,7 @@
 <?php if($_POST){
     $errors = array();
-    if(empty($_POST['sex'])){
-        $errors['sex'] = "Select your sex";
+    if(empty($_POST['gender'])){
+        $errors['gender'] = "Select your sex";
       }
     if(empty($_POST['name'])){
       $errors['name'] = "Your name is required";
@@ -18,15 +18,15 @@
   }
 ?>
 <?php 
-    if(isset($_POST)){
+    if(isset($_POST['submit'])){
         var_dump($_POST);
-        $to = "jules.dumas94@gmail.com";
-        $from = "jules.testphp@gmail.com";
+        $to = 'jules.dumas94@gmail.com';
+        $from = 'jules.testphp@gmail.com';
         $email = $_POST['email'];
         $message = $_POST['message'];
-        $subject = "New message from contact Roquet Raccoon";
-        $content = "Le message suivant vient de la galaxie" .$message ."email de contact: " .$email;
-        $headers = "From" .$from;
+        $subject = 'New message from contact Roquet Raccoon';
+        $content = 'Le message suivant vient de la galaxie' .$message .'email de contact: ' .$email;
+        $headers = 'From' .$from;
         mail($to, $subject, $content, $headers);
         echo 'votre message est bien parti pour la galaxie';
     }
@@ -39,7 +39,7 @@
                         <ul>
                             <li>
                                 <label for="sexe"></label>
-                                <select name="select">
+                                <select name="gender">
                                     <option>sex</option>
                                     <option>Femme</option>
                                     <option>Homme</option>
@@ -67,7 +67,7 @@
                                 <?php if(isset($errors['message'])) echo $errors['message']; ?>
                             </li>
                             <li>
-                                <input type="submit" value="Envoyer">
+                                <input type="submit" value="Envoyer" name="submit">
                             </li>
                         </ul>
                         </form> 
